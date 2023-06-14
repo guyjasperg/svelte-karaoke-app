@@ -6,8 +6,12 @@
 
 	const handleClick = () => {
 		if (searchString) {
+			let newSearchString = searchString.toLowerCase();
+			if (!newSearchString.includes('karaoke')) {
+				newSearchString += ' karaoke';
+			}
 			dispatch('search', {
-				text: searchString
+				text: newSearchString
 			});
 		}
 	};
@@ -35,7 +39,7 @@
 			type="search"
 			id="default-search"
 			class="block w-full bg-gray p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
-			placeholder="Search Mockups, Logos..."
+			placeholder="Search Titles, Artists..."
 			bind:value={searchString}
 			required
 		/>

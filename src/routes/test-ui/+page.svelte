@@ -39,6 +39,28 @@
 	</div>
 </div>
 
+<div class="grid grid-rows-2 w-[250px] rounded-t-lg mt-5 border h-[300px]">
+	<div class="row-span-1 rounded-t-lg h-[180px]">
+		<img
+			class="rounded-t-lg"
+			src="https://www.naturallywood.com/wp-content/uploads/PH1-building-exterior-credit-Ishot2.jpg"
+			alt=""
+		/>
+	</div>
+	<div class="grid grid-rows-3 grid-cols-1">
+		<div class="row-span-2 text-center">
+			<p class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+				Noteworthy technology acquisitions 2021
+			</p>
+		</div>
+		<div class="row-span-1 overflow-clip">
+			<p class="font-normal text-gray-700 dark:text-gray-400">
+				Here are the biggest asdasdadasa adas asdad asdasd asdasdasd sadasdasd asdasdasd dadas
+			</p>
+		</div>
+	</div>
+</div>
+
 <div class="w-1/3">
 	<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
 		>Search</label
