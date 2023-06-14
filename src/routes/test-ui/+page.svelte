@@ -1,5 +1,50 @@
 <!-- component -->
 
+<div class="w-1/3">
+	<form />
+
+	<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+		>Search</label
+	>
+	<div class="relative">
+		<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+			<svg
+				aria-hidden="true"
+				class="w-5 h-5 text-gray-500 dark:text-gray-400"
+				fill="none"
+				stroke="currentColor"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+				><path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+				/></svg
+			>
+		</div>
+		<input
+			type="search"
+			id="default-search"
+			class="block w-full bg-gray p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
+			placeholder="Search Mockups, Logos..."
+			required
+		/>
+		<button
+			type="submit"
+			class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+			>Search</button
+		>
+	</div>
+
+	<input
+		class="bg-gray-50 border-2 border-gray-200 rounded-lg w-full py-4 px-4 text-lg text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+		id="inline-full-name"
+		type="search"
+		placeholder="Jane Doe"
+	/>
+</div>
+
 <div class="h-screen w-screen flex flex-col gap-4 items-center justify-center bg-white">
 	<!-- Card 1 -->
 	<a href="#" class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">
@@ -70,4 +115,42 @@
 			</div>
 		</div>
 	</a>
+</div>
+
+<div class="w-full max-w-xs shadow-md rounded bg-white p-8">
+	<!-- <form class="bg-white px-8 pt-6 pb-8 mb-4" /> -->
+	<div class="mb-4">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="username"> Username </label>
+		<input
+			class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+			id="username"
+			type="text"
+			placeholder="Username"
+		/>
+	</div>
+	<div class="mb-6">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="password"> Password </label>
+		<input
+			class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+			id="password"
+			type="password"
+			placeholder="******************"
+		/>
+		<p class="text-red-500 text-xs italic">Please choose a password.</p>
+	</div>
+	<div class="flex items-center justify-between">
+		<button
+			class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+			type="button"
+		>
+			Sign In
+		</button>
+		<a
+			class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+			href="#"
+		>
+			Forgot Password?
+		</a>
+	</div>
+	<p class="text-center text-gray-500 text-xs mt-4">&copy;2020 Acme Corp. All rights reserved.</p>
 </div>
