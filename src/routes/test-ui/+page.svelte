@@ -1,4 +1,43 @@
-<!-- component -->
+<div
+	class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+>
+	<a href="#">
+		<img
+			class="rounded-t-lg"
+			src="https://www.naturallywood.com/wp-content/uploads/PH1-building-exterior-credit-Ishot2.jpg"
+			alt=""
+		/>
+	</a>
+	<div class="p-5">
+		<a href="#">
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+				Noteworthy technology acquisitions 2021
+			</h5>
+		</a>
+		<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+			Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
+			chronological order.
+		</p>
+		<a
+			href="#"
+			class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+		>
+			Read more
+			<svg
+				aria-hidden="true"
+				class="w-4 h-4 ml-2 -mr-1"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg"
+				><path
+					fill-rule="evenodd"
+					d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+					clip-rule="evenodd"
+				/></svg
+			>
+		</a>
+	</div>
+</div>
 
 <div class="w-1/3">
 	<label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -55,43 +94,6 @@
 			<!-- Profile Picture -->
 			<div>
 				<img src="https://picsum.photos/seed/2/200/200" class="w-16 h-16 rounded-full" alt="" />
-			</div>
-
-			<!-- Description -->
-			<div class="col-span-5 md:col-span-4 ml-4">
-				<p class="text-sky-500 font-bold text-xs">20+ SPOTS LEFT</p>
-
-				<p class="text-gray-600 font-bold">[Intermediate/Advanced] Tea Time Conversation</p>
-
-				<p class="text-gray-400">Sat, Mar 12 . 7:00 - 8:30 AM</p>
-
-				<p class="text-gray-400">Beginner speakers</p>
-			</div>
-
-			<!-- Price -->
-			<div class="flex col-start-2 ml-4 md:col-start-auto md:ml-0 md:justify-end">
-				<p class="rounded-lg text-sky-500 font-bold bg-sky-100 py-1 px-3 text-sm w-fit h-fit">
-					$ 5
-				</p>
-			</div>
-		</div>
-	</a>
-
-	<!-- Card 2 -->
-	<a href="#" class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">
-		<!-- Badge -->
-		<p class="bg-sky-500 w-fit px-4 py-1 text-sm font-bold text-white rounded-tl-lg rounded-br-xl">
-			FEATURED
-		</p>
-
-		<div class="grid grid-cols-6 p-5 gap-y-2">
-			<!-- Profile Picture -->
-			<div>
-				<img
-					src="https://picsum.photos/seed/2/200/200"
-					class="w-16 h-16 rounded-full"
-					alt="loading"
-				/>
 			</div>
 
 			<!-- Description -->

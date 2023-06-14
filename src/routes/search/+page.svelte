@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { searchSongs } from '../api/yt-api';
 	import Searchbar from '../../components/Searchbar.svelte';
-	import { comma } from 'postcss/lib/list';
+	import ResultCard from '../../components/ResultCard.svelte';
 
 	// let ytVids = {};
 	let searchString = '';
@@ -34,6 +34,7 @@
 
 		if (!searchString) return;
 
+		ytV1 = [];
 		const result = await searchSongs(searchString);
 		ytV1 = result.items;
 	};
@@ -41,15 +42,20 @@
 
 <Searchbar on:search={handleSearch} />
 
-<div class="rounded-sm bg-white mt-5 w-[100%] text-center items-center p-4 h-screen">
-	<h1 class="font-bold text-2xl">Search Result</h1>
+<h1 class="font-bold text-2xl">Search Result</h1>
+<div class="flex flex-wrap rounded-sm bg-white mt-5 w-[100%] text-center items-center p-4 h-screen">
 	{#if ytV1.length > 0 && mounted}
-		{console.log('Inside if 2')}
 		{#each ytV1 as yt}
 			<div class="flex items-center text-center p-2 content-center flex-col">
 				<!-- svelte-ignore a11y-missing-attribute -->
-				<img class="w-[200px] mr-2" src={yt.snippet.thumbnails.high.url} />
-				<h1>{yt.snippet.title}</h1>
+				<!-- <img class="w-[200px] mr-2" src={yt.snippet.thumbnails.high.url} />
+				<h1>{yt.snippet.title}</h1> -->
+				<ResultCard
+					class="h-[200px] h-min-[200px]"
+					imgSrc={yt.snippet.thumbnails.high.url}
+					title={yt.snippet.title}
+					description={yt.snippet.description}
+				/>
 			</div>
 		{/each}
 	{/if}
