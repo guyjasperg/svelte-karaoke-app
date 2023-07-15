@@ -104,7 +104,7 @@
 	/>
 </div>
 
-<div class="h-screen w-screen flex flex-col gap-4 items-center justify-center bg-white">
+<div class="w-screen flex flex-col gap-4 items-center justify-center bg-white">
 	<!-- Card 1 -->
 	<a href="#" class="w-[30rem] border-2 border-b-4 border-gray-200 rounded-xl hover:bg-gray-50">
 		<!-- Badge -->

@@ -17,8 +17,22 @@ const YT_KEY = 'AIzaSyDXXlsxXYjEqZdsXUI2uLKCCGHFgMFV-7g';
 export async function searchSongs(search: string) {
 	let q = `${YT_URL}${search}&key=${YT_KEY}`;
 
-	const response = await axios.get(q);
-	//console.log(response)
+	try	
+	{
+		const response = await axios.get(q);
+		//console.log(response)
+	
+		return response.data;
+	
+	}
+	catch(error){
+		console.log(error)
+		if(error.response){
+			console.log(error.response);
+		}
+		else{
+			console.error(error);
+		}
+	}
 
-	return response.data;
 }

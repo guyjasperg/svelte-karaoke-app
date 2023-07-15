@@ -39,6 +39,40 @@
 	};
 </script>
 
+<div class="bg-gray-400 p-5">
+	Parent
+	<div class="child1 bg-green-200">
+		Child 1
+		<button class="p-2 rounded-lg bg-blue-300 m-1">Click Me</button>
+		<button class="p-2 rounded-lg bg-blue-300 m-1">Click Me</button>
+		<p>ajdhasjkdha</p>
+		<button class="p-2 rounded-lg bg-blue-300 m-1">Click Me</button>
+		<button class="p-2 rounded-lg bg-blue-300 m-1 hover:rounded-full">Click Me</button>
+	</div>
+	<div class="child2 bg-red-200">Child 2</div>
+	<div class="child3 bg-blue-200">Child 3</div>
+	<div class="flex flex-col items-center">
+		<p>line 1</p>
+		<p>line 2</p>
+		<p>line 3</p>
+	</div>
+	<div class="flex flex-row">
+		Child 4
+		<p>line 1</p>
+		<button>Click Me</button>
+		<p>line 2</p>
+		<p>line 3</p>
+	</div>
+	<div class="bg-blue-200 relative">
+		Child 5
+		<p>line 1</p>
+		<div class="w-fit bg-blue-400 translate-x-1/2]">
+			<button class="p-2 rounded-lg bg-blue-300 m-1">Click Me</button>
+			<button class="p-2 rounded-lg bg-blue-300 m-1">Click Me</button>
+		</div>
+	</div>
+</div>
+
 <h1 class="text-2xl">About</h1>
 <p>Karaoke App v1.0</p>
 

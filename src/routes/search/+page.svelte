@@ -7,6 +7,8 @@
 	// let ytVids = {};
 	let searchString = '';
 	let mounted = false;
+	let reload = false;
+	let action = 'Select a song.';
 
 	onMount(() => {
 		console.log('onMount');
@@ -28,21 +30,29 @@
 		}
 	];
 
-	const handleSearch = async (event) => {
+	const handleSearch = async (event: { detail: { text: string } }) => {
 		searchString = event.detail.text;
 		console.log('handleSearch', searchString);
+		action = 'Searching...';
 
 		if (!searchString) return;
 
 		ytV1 = [];
+		reload = true;
 		const result = await searchSongs(searchString);
-		ytV1 = result.items;
+		if (result.error) {
+		} else {
+			ytV1 = result.items;
+		}
+
+		action = 'Saerch Result';
 	};
 </script>
 
 <Searchbar on:search={handleSearch} />
-
-<h1 class="font-bold text-2xl">Search Result</h1>
+<div class="text-center">
+	<h1 class="font-bold text-2xl">{action}</h1>
+</div>
 <div class="flex flex-wrap rounded-sm bg-white mt-2 w-[100%] p-4 h-screen">
 	{#if ytV1.length > 0 && mounted}
 		{#each ytV1 as yt}
@@ -58,5 +68,5 @@
 				<h1>{yt.snippet.title}</h1> -->
 			</div>
 		{/each}
-	{/if}
+	{:else if reload}{/if}
 </div>
